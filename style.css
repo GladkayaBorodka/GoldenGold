@@ -1,107 +1,125 @@
-/* Общие стили */
+/* Base */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
-}
-
-h1, h2, h3 {
+  }
+  
+  h1, h2, h3 {
     margin: 0;
-}
-
-/* Header */
-.header {
+  }
+  
+  /* Header */
+  .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
-}
-
-.logo {
+    background-color: #f9f9f9;
+  }
+  
+  .header-logo {
     font-size: 24px;
     font-weight: bold;
     color: goldenrod;
-}
-
-.nav-list {
+  }
+  
+  .header-list {
     list-style: none;
     display: flex;
     gap: 20px;
-}
-
-.nav-list li {
-    display: inline;
-}
-
-.nav-list a {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .header-link {
     text-decoration: none;
     color: black;
     font-weight: bold;
-}
-
-/* Services */
-.services {
-    padding: 50px 0;
-}
-
-.section-title {
+  }
+  
+  /* Section Title */
+  .section-title {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 30px;
-}
-
-.services-container {
+  }
+  
+  /* Services */
+  .services {
+    padding: 50px 0;
+  }
+  
+  .services-title {
+    margin-bottom: 30px;
+  }
+  
+  .services-list {
     display: flex;
     justify-content: center;
     gap: 50px;
-}
-
-.service-item {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .services-item {
     width: 250px;
     text-align: center;
-}
-
-.service-item img {
+  }
+  
+  .services-icon {
     width: 60px;
     height: 60px;
     margin-bottom: 10px;
-}
-
-/* Contact */
-.contact {
+  }
+  
+  .services-name {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .services-desc {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  /* Contact */
+  .contact {
     background-color: #222;
     color: white;
     padding: 50px 0;
-}
-
-.contact-form {
+  }
+  
+  .contact-form {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
     max-width: 600px;
     margin: auto;
-}
-
-.form-left, .form-right {
+  }
+  
+  .contact-form-left,
+  .contact-form-right {
     flex: 1;
     min-width: 250px;
-}
-
-input, textarea {
+  }
+  
+  .contact-input,
+  .contact-textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
     border: none;
-    margin-right: 10px;
-}
-
-textarea {
+  }
+  
+  .contact-textarea {
     height: 100px;
-}
-
-.btn {
+  }
+  
+  .contact-button {
     background-color: goldenrod;
     border: none;
     padding: 10px 20px;
@@ -109,4 +127,11 @@ textarea {
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
-}
+  }
+  
+  /* Optional hover */
+  .header-link:hover,
+  .contact-button:hover {
+    opacity: 0.8;
+  }
+  
