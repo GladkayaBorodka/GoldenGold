@@ -3,63 +3,80 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Golden Services</title>
-  <link rel="stylesheet" href="reset.css" />
+  <title>Golden</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Header -->
   <header class="header">
-    <h1 class="header-logo">Golden</h1>
-    <nav class="header-nav">
-      <ul class="header-list">
-        <li class="header-item"><a href="#" class="header-link">Home</a></li>
-        <li class="header-item"><a href="#" class="header-link">Services</a></li>
-        <li class="header-item"><a href="#" class="header-link">Portfolio</a></li>
-        <li class="header-item"><a href="#" class="header-link">About</a></li>
-        <li class="header-item"><a href="#" class="header-link">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="container header-container">
+      <a href="#" class="header-logo">Golden</a>
+      <nav class="header-nav">
+        <ul class="header-list">
+          <li class="header-item"><a href="#" class="header-link">HOME</a></li>
+          <li class="header-item"><a href="#" class="header-link">SERVICES</a></li>
+          <li class="header-item"><a href="#" class="header-link">PORTFOLIO</a></li>
+          <li class="header-item"><a href="#" class="header-link">ABOUT</a></li>
+          <li class="header-item"><a href="#" class="header-link">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <!-- Services -->
-  <section class="services">
-    <h2 class="services-title section-title">SERVICES</h2>
-    <ul class="services-list">
-      <li class="services-item">
-        <img src="./img/picone.png" alt="E-Commerce" class="services-icon" />
-        <h3 class="services-name">E-Commerce</h3>
-        <p class="services-desc">Proin iaculis purus consequat sem cure digni ssim.</p>
-      </li>
-      <li class="services-item">
-        <img src="./img/pictwo.png" alt="Responsive Web" class="services-icon" />
-        <h3 class="services-name">Responsive Web</h3>
-        <p class="services-desc">Proin iaculis purus consequat sem cure digni ssim.</p>
-      </li>
-      <li class="services-item">
-        <img src="./img/picthree.png" alt="Web Security" class="services-icon" />
-        <h3 class="services-name">Web Security</h3>
-        <p class="services-desc">Proin iaculis purus consequat sem cure digni ssim.</p>
-      </li>
-    </ul>
-  </section>
+  <main>
+    <section class="services">
+      <div class="container">
+        <h2 class="section-title">SERVICES</h2>
+        <ul class="services-list">
+          <li class="services-item">
+            <div class="services-icon-wrapper">
+                <img src="./img/picone.png" alt="E-Commerce icon" class="services-icon" />
+            </div>
+            <h3 class="services-name">E-Commerce</h3>
+            <p class="services-desc">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
+          </li>
+          <li class="services-item">
+            <div class="services-icon-wrapper">
+                <img src="./img/pictwo.png" alt="Responsive Web icon" class="services-icon" />
+            </div>
+            <h3 class="services-name">Responsive Web</h3>
+            <p class="services-desc">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
+          </li>
+          <li class="services-item">
+            <div class="services-icon-wrapper">
+                <img src="./img/picthree.png" alt="Web Security icon" class="services-icon" />
+            </div>
+            <h3 class="services-name">Web Security</h3>
+            <p class="services-desc">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-  <!-- Contact -->
-  <section class="contact">
-    <h2 class="contact-title section-title">CONTACT US</h2>
-    <form class="contact-form">
-      <div class="contact-form-left">
-        <input type="text" class="contact-input" placeholder="Your Name *" required />
-        <input type="email" class="contact-input" placeholder="Your E-Mail *" required />
-        <input type="text" class="contact-input" placeholder="Subject" />
+    <section class="contact">
+      <div class="container">
+        <h2 class="section-title">CONTACT US</h2>
+        <form class="contact-form" action="#" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <input type="text" class="contact-input" placeholder="YOUR NAME *" required />
+              <input type="email" class="contact-input" placeholder="YOUR E-MAIL *" required />
+              <input type="text" class="contact-input" placeholder="SUBJECT" />
+            </div>
+            <div class="form-group">
+              <textarea class="contact-textarea" placeholder="YOUR MESSAGE *" required></textarea>
+            </div>
+          </div>
+          <div class="form-button-wrapper">
+            <button type="submit" class="contact-button">SEND MESSAGE</button>
+          </div>
+        </form>
       </div>
-      <div class="contact-form-right">
-        <textarea class="contact-textarea" placeholder="Your Message *" required></textarea>
-      </div>
-      <button type="submit" class="contact-button btn">Send Message</button>
-    </form>
-  </section>
+    </section>
+  </main>
 
 </body>
 </html>
